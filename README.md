@@ -85,11 +85,19 @@ This README provides an overview of the functionalities and usage of a note-taki
 1. Install Node.js and MongoDB.
 2. Clone the repository.
 3. Run `npm install` to install dependencies.
-4. MongoDB connection details.
+4. MongoDB connection details. (for  Localdb can use mongodb Compass )
 5. Run the application using `npm start`.
 
 ### 5. Error Handling
 
 - Proper error messages and status codes are provided for different scenarios, such as validation failures, authentication issues, and database errors.
 
+### 6. Testing
+Testing has been conducted using Postman, and edge cases have been addressed to ensure robust functionality.
 
+
+**Notes:**
+For ease of code execution and comfort during development, the `.env` file hasn't been used to secure the `JWT_SECRET`. Keep in mind that in a production environment, it's crucial to use environment variables and secure sensitive information like secrets to enhance application security.
+
+### REASON for Choosing Tech ( Nodejs + Mongodb )
+Node.js is chosen for its JavaScript runtime, enabling server-side and client-side code consistency. MongoDB, a NoSQL database, is preferred for its flexibility in handling evolving data structures and seamless integration with Node.js. 
